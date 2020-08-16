@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
 namespace SeleniumWebdriver
@@ -10,7 +11,10 @@ namespace SeleniumWebdriver
         [TestMethod]
         public void TestMethod1()
         {
-            ChromeDriver
+            IWebDriver driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("https://localhost:44339/");
+            driver.Close();
+            driver.Quit();
         }
     }
 }
