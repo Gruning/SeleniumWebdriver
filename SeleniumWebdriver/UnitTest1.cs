@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -16,5 +17,10 @@ namespace SeleniumWebdriver
             driver.Close();
             driver.Quit();
         }
+        //[TestMethod]
+        //public void TestMethod2()
+        //{
+        //    ConfigurationManager
+        //}
     }
 }
