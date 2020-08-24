@@ -17,10 +17,13 @@ namespace SeleniumWebdriver
             driver.Close();
             driver.Quit();
         }
-        //[TestMethod]
-        //public void TestMethod2()
-        //{
-        //    ConfigurationManager
-        //}
+        [TestMethod]
+        public void TestMethod2()
+        {
+            Console.WriteLine(ConfigurationManager.AppSettings.Get("Browser"));
+            Console.WriteLine(ConfigurationManager.AppSettings.Get("Username"));
+            Console.WriteLine(ConfigurationManager.AppSettings.Get("Password"));
+
+        }
     }
 }
