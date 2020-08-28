@@ -3,6 +3,7 @@ using System.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using SeleniumWebdriver.Configuration;
 
 namespace SeleniumWebdriver
 {
@@ -23,7 +24,7 @@ namespace SeleniumWebdriver
             Console.WriteLine(ConfigurationManager.AppSettings.Get("Browser"));
             Console.WriteLine(ConfigurationManager.AppSettings.Get("Username"));
             Console.WriteLine(ConfigurationManager.AppSettings.Get("Password"));
-
+            Console.WriteLine((int)BrowserType.Chrome);
         }
     }
 }

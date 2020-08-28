@@ -8,5 +8,8 @@ namespace SeleniumWebdriver.Configuration
 {
     public enum BrowserType
     {
+        Chrome,
+        Firefox,
+        Edge
     }
 }
