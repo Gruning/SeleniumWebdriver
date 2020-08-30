@@ -8,5 +8,6 @@ namespace SeleniumWebdriver.Settings
 {
     public class AppConfigKeys
     {
+        public const string Browser = "";
     }
 }
