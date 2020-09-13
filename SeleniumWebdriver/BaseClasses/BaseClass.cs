@@ -11,7 +11,8 @@ namespace SeleniumWebdriver.BaseClasses
     {
         private static IWebDriver GetChromeDriver()
         {
-
+            IWebDriver driver = new ChromeDriver();
+            return driver
         }
     }
 }
