@@ -14,5 +14,9 @@ namespace SeleniumWebdriver.BaseClasses
             IWebDriver driver = new ChromeDriver();
             return driver
         }
+        [AssemblyInitialize]
+        public static void InitWebDriver(TestContext tc){
+
+        }
     }
 }
