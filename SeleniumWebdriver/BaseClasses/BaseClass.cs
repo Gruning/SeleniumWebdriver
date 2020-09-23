@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace SeleniumWebdriver.BaseClasses
 {
+    [TestClass]
     public class BaseClass
     {
         private static IWebDriver GetChromeDriver()
