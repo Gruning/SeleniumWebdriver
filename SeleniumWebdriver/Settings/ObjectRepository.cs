@@ -6,7 +6,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
-using SeleniumWebdriver.Interfaces
+using SeleniumWebdriver.Interfaces;
 
 namespace SeleniumWebdriver.Settings
 {

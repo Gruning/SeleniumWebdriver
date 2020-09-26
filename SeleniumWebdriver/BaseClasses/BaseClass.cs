@@ -1,4 +1,8 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using SeleniumWebdriver.Configuration;
+using SeleniumWebdriver.CustomException;
+using SeleniumWebdriver.Settings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +17,7 @@ namespace SeleniumWebdriver.BaseClasses
         private static IWebDriver GetChromeDriver()
         {
             IWebDriver driver = new ChromeDriver();
-            return driver
+            return driver;
         }
         [AssemblyInitialize]
         public static void InitWebDriver(TestContext tc){
