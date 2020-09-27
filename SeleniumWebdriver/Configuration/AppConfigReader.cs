@@ -26,5 +26,9 @@ namespace SeleniumWebdriver.Configuration
         {
             return ConfigurationManager.AppSettings.Get(AppConfigKeys.Username);
         }
+        public string GetWebSite()
+        {
+            return ConfigurationManager.AppSettings.Get(AppConfigKeys.Website);
+        }
     }
 }
