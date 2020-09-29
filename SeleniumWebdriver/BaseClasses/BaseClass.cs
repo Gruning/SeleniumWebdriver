@@ -1,7 +1,8 @@
-﻿using OpenQA.Selenium;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using SeleniumWebdriver.Configuration;
-using SeleniumWebdriver.CustomException;
+using SeleniumWebdriver.Configuration.CustomException;
 using SeleniumWebdriver.Settings;
 using System;
 using System.Collections.Generic;
