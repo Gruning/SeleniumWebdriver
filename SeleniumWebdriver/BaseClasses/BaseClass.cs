@@ -25,7 +25,7 @@ namespace SeleniumWebdriver.BaseClasses
             ObjectRepository.Config = AppConfigReader();
             switch (ObjectRepository.Config.GetBrowser)
             {
-                case BreowserType.Chrome:
+                case BrowserType.Chrome:
                     ObjectRepository.Driver = GetChromeDriver();
                     break;
                 default:

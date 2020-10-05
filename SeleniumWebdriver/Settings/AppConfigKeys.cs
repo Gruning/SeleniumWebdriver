@@ -11,7 +11,7 @@ namespace SeleniumWebdriver.Settings
         public const string Browser = "Browser";
         public const string Username = "Username";  
         public const string Password = "Password";
-        public const string WebSite= "";
+        public const string Website = "";
 
     }
 }
