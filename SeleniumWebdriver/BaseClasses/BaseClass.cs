@@ -22,7 +22,7 @@ namespace SeleniumWebdriver.BaseClasses
         }
         [AssemblyInitialize]
         public static void InitWebDriver(TestContext tc){
-            ObjectRepository.Config = AppConfigReader();
+            ObjectRepository.Config = new AppConfigReader();
             switch (ObjectRepository.Config.GetBrowser)
             {
                 case BrowserType.Chrome:
