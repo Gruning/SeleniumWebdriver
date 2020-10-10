@@ -23,13 +23,13 @@ namespace SeleniumWebdriver.BaseClasses
         [AssemblyInitialize]
         public static void InitWebDriver(TestContext tc){
             ObjectRepository.Config = new AppConfigReader();
-            switch (ObjectRepository.Config.GetBrowser)
+            switch (ObjectRepository.Config.GetBrowser())
             {
                 case BrowserType.Chrome:
                     ObjectRepository.Driver = GetChromeDriver();
                     break;
                 default:
-                    throw new NoSuitableDirverFound("Driver not found : {0}", ObjectRepository.Config.GetBrowser().ToString());
+                    throw new NoSuitableDirverFound($"Driver not found : {ObjectRepository.Config.GetBrowser().ToString()}");
             }
         }
     }

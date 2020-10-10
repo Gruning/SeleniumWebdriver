@@ -8,7 +8,7 @@ namespace SeleniumWebdriver.Configuration.CustomException
 {
     public class NoSuitableDirverFound: Exception
     {
-        public NoSuitableDirverFound(string msg): base(msg)
+        public NoSuitableDirverFound(string msg) : base(msg)
         {
 
         }
