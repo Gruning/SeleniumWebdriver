@@ -29,7 +29,7 @@ namespace SeleniumWebdriver.BaseClasses
                     ObjectRepository.Driver = GetChromeDriver();
                     break;
                 default:
-                    throw new NoSuitableDirverFound($"Driver not found : {ObjectRepository.Config.GetBrowser().ToString()}");
+                    throw new NoSuitableDirverFound($"Driver not found : {ObjectRepository.Config.GetBrowser()}");
             }
         }
     }
