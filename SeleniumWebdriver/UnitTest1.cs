@@ -13,6 +13,7 @@ namespace SeleniumWebdriver
         [TestMethod]
         public void TestMethod1()
         {
+
             IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://localhost:44339/");
             driver.Close();
