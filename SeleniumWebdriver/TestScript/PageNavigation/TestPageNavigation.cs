@@ -15,8 +15,12 @@ namespace SeleniumWebdriver.TestScript.PageNavigation
         [TestMethod]
         public void OpenPage()
         {
-            INavigation page = ObjectRepository.Driver.Navigate();
-            page.GoToUrl(ObjectRepository.Config.GetWebSite());
+            //INavigation page = ObjectRepository.Driver.Navigate();
+            //page.GoToUrl(ObjectRepository.Config.GetWebSite());
+
+            //the same state as single step
+            ObjectRepository.Driver.Navigate().GoToUrl(ObjectRepository.Config.GetWebSite());
+
         }
     }
 }
