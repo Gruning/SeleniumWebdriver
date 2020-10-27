@@ -32,5 +32,15 @@ namespace SeleniumWebdriver.BaseClasses
                     throw new NoSuitableDirverFound($"Driver not found : {ObjectRepository.Config.GetBrowser()}");
             }
         }
+
+        [AssemblyCleanup]
+        public static void TearDown() {
+            if (ObjectRepository.Driver != null)
+            {
+                ObjectRepository.Driver.Close();
+                ObjectRepository.Driver.Quit();
+
+            }
+        }
     }
 }
