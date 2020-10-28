@@ -15,6 +15,10 @@ namespace SeleniumWebdriver.BaseClasses
     [TestClass]
     public class BaseClass
     {
+        private static ChromeOptions GetChromeOptions()
+        {
+            ChromeOptions option = new ChromeOptions();
+        }
         private static IWebDriver GetChromeDriver()
         {
             IWebDriver driver = new ChromeDriver();
