@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
+using SeleniumWebdriver.ComponentHelper;
 using SeleniumWebdriver.Settings;
 using System;
 using System.Collections.Generic;
@@ -19,8 +20,10 @@ namespace SeleniumWebdriver.TestScript.PageNavigation
             //page.GoToUrl(ObjectRepository.Config.GetWebSite());
 
             //the same state as single step
-            ObjectRepository.Driver.Navigate().GoToUrl(ObjectRepository.Config.GetWebSite());
+            //ObjectRepository.Driver.Navigate().GoToUrl(ObjectRepository.Config.GetWebSite());
 
+            //with NavigationHelper
+            NavigationHelper.NavigateToUrl(ObjectRepository.Config.GetWebSite());
         }
     }
 }
