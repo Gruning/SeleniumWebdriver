@@ -18,8 +18,10 @@ namespace SeleniumWebdriver.BaseClasses
         private static ChromeOptions GetChromeOptions()
         {
             ChromeOptions option = new ChromeOptions();
+            option.AddArgument("start-maximized");
+            return option;
         }
-        private static IWebDriver GetChromeDriver()
+        private static IWebDriver GetChromeDriver(GetChromeOptions())
         {
             IWebDriver driver = new ChromeDriver();
             return driver;
