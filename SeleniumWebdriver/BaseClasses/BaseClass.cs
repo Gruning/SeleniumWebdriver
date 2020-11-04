@@ -21,9 +21,9 @@ namespace SeleniumWebdriver.BaseClasses
             option.AddArgument("start-maximized");
             return option;
         }
-        private static IWebDriver GetChromeDriver(GetChromeOptions())
+        private static IWebDriver GetChromeDriver()
         {
-            IWebDriver driver = new ChromeDriver();
+            IWebDriver driver = new ChromeDriver(GetChromeOptions());
             return driver;
         }
         [AssemblyInitialize]
