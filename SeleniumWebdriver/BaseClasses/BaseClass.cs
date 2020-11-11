@@ -26,6 +26,11 @@ namespace SeleniumWebdriver.BaseClasses
             IWebDriver driver = new ChromeDriver(GetChromeOptions());
             return driver;
         }
+        private static IWebDriver GetFirefoxDriverDriver()
+        {
+            IWebDriver driver = new ChromeDriver(GetChromeOptions());
+            return driver;
+        }
         [AssemblyInitialize]
         public static void InitWebDriver(TestContext tc){
             ObjectRepository.Config = new AppConfigReader();
