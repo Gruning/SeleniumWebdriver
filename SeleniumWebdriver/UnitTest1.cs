@@ -16,7 +16,7 @@ namespace SeleniumWebdriver
         {
 
             IWebDriver driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://localhost:44339/");
+            driver.Navigate().GoToUrl("www.google.com");//GoToUrl("https://localhost:44339/");
             driver.Close();
             driver.Quit();
         }
