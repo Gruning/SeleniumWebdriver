@@ -1,4 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
+using SeleniumWebdriver.Settings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +12,8 @@ namespace SeleniumWebdriver.TestScript.WebElement
     [TestClass]
     public class TestWebElement
     {
-        [TestMethod]public void GetElement() { }
+        [TestMethod]public void GetElement() {
+            ObjectRepository.Driver.FindElement(By.TagName("input"));
+        }
     }
 }
