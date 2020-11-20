@@ -14,6 +14,10 @@ namespace SeleniumWebdriver.TestScript.WebElement
     {
         [TestMethod]public void GetElement() {
             ObjectRepository.Driver.FindElement(By.TagName("input"));
+            ObjectRepository.Driver.FindElement(By.ClassName("btn"));
+            ObjectRepository.Driver.FindElement(By.CssSelector("#find"));
+            ObjectRepository.Driver.FindElement(By.LinkText("Gmail"));
+
         }
     }
 }
