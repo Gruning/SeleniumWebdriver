@@ -18,13 +18,13 @@ namespace SeleniumWebdriver.TestScript.WebElement
             try
             {
 
-                ObjectRepository.Driver.FindElement(By.TagName("input"));
-                ObjectRepository.Driver.FindElement(By.ClassName("btn"));
-                ObjectRepository.Driver.FindElement(By.CssSelector("#find"));
-                ObjectRepository.Driver.FindElement(By.LinkText("Gmail"));
+                var byTag = ObjectRepository.Driver.FindElement(By.TagName("input"));
+                var byCss = ObjectRepository.Driver.FindElement(By.CssSelector("#find"));
+                var byId = ObjectRepository.Driver.FindElement(By.Id("footcnt"));
+                var byLink = ObjectRepository.Driver.FindElement(By.LinkText("Gmail"));
+                var byBlass = ObjectRepository.Driver.FindElement(By.ClassName("btn"));
                 //ObjectRepository.Driver.FindElement(By.PartialLinkText("Gmail"));
                 //ObjectRepository.Driver.FindElement(By.Name("Gmail"));
-                ObjectRepository.Driver.FindElement(By.Id("footcnt"));
                 //ObjectRepository.Driver.FindElement(By.XPath("Gmail"));
             }
             catch (NoSuchElementException e)
