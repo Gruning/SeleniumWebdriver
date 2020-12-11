@@ -4,6 +4,7 @@ using SeleniumWebdriver.ComponentHelper;
 using SeleniumWebdriver.Settings;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,7 +18,11 @@ namespace SeleniumWebdriver.TestScript.WebElement
             NavigationHelper.NavigateToUrl(ObjectRepository.Config.GetWebSite());
             try
             {
-                ObjectRepository.Driver.FindElements(By.TagName("input"));
+                ReadOnlyCollection<IWebElement> col =  ObjectRepository.Driver.FindElements(By.TagName("input"));
+                Console.WriteLine($"Size: {col.Count}");
+                Console.WriteLine($"Size: {col.ElementAt(0)}");
+                Console.WriteLine($"Size: {col.ElementAt(0).Location}");
+
 
                 // var byCss = ObjectRepository.Driver.FindElement(By.CssSelector("#find"));
                 //var byBlass = ObjectRepository.Driver.FindElement(By.ClassName("btn"));
