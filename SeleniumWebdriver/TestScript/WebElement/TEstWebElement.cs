@@ -20,6 +20,9 @@ namespace SeleniumWebdriver.TestScript.WebElement
             {
                 ReadOnlyCollection<IWebElement> col =  ObjectRepository.Driver.FindElements(By.TagName("input"));
                 Console.WriteLine($"Size: {col.Count}");
+                Console.WriteLine($"Size: {col.ElementAt(0)}");
+                Console.WriteLine($"Size: {col.ElementAt(0).Location}");
+
 
                 // var byCss = ObjectRepository.Driver.FindElement(By.CssSelector("#find"));
                 //var byBlass = ObjectRepository.Driver.FindElement(By.ClassName("btn"));
