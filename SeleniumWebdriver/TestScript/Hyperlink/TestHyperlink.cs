@@ -16,8 +16,11 @@ namespace SeleniumWebdriver.TestScript.Hyperlink
         [TestMethod]
         public void clickLink() {
             NavigationHelper.NavigateToUrl(ObjectRepository.Config.GetWebSite());
-            IWebElement element = ObjectRepository.Driver.FindElement(By.LinkText("Imágenes"));
-            element.Click();
+            //IWebElement element = ObjectRepository.Driver.FindElement(By.LinkText("Imágenes"));
+            //element.Click();
+
+            IWebElement pelement = ObjectRepository.Driver.FindElement(By.PartialLinkText("Gma"));
+            pelement.Click();
         }
     }
 }
