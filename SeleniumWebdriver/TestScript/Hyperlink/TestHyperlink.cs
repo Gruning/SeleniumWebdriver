@@ -19,8 +19,11 @@ namespace SeleniumWebdriver.TestScript.Hyperlink
             //IWebElement element = ObjectRepository.Driver.FindElement(By.LinkText("Imágenes"));
             //element.Click();
 
-            IWebElement pelement = ObjectRepository.Driver.FindElement(By.PartialLinkText("Gma"));
-            pelement.Click();
+            //IWebElement pelement = ObjectRepository.Driver.FindElement(By.PartialLinkText("Gma"));
+            //pelement.Click();
+
+            LinkHelper.clickLink(By.LinkText("Gmail"));
+            LinkHelper.clickLink(By.PartialLinkText("Gma"));
         }
     }
 }
