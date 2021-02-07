@@ -12,6 +12,9 @@ namespace SeleniumWebdriver.TestScript.TextBox
     {
         [TestMethod]
         public void TextBox() { 
+            NavigationHelper.NavigateToUrl(ObjectRepository.Config.GetWebsite());
+            LinkHelper.ClickLink(By.LinkText(""));
+            IWebElement ele = ObjectRepository.Driver.FindElement(By.Id(""));
         }
     }
 }
